@@ -59,7 +59,16 @@ console.log(getRandomQuote() );
 /***
  * `printQuote` function
 ***/
+// function that uses the random object and prints to html.
 
+function printQuote() {
+	const randQuote = getRandomQuote();
+
+	
+	const source;
+	if (randQuote.source exists)
+
+}
 
 
 /***
