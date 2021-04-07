@@ -82,5 +82,5 @@ console.log(printQuote);
  * click event listener for the print quote button
  * DO NOT CHANGE THE CODE BELOW!!
 ***/
-
+// I did not change this code :)
 document.getElementById('load-quote').addEventListener("click", printQuote, false);
