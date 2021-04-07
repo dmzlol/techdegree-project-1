@@ -49,11 +49,11 @@ const quotes = [
 // function to choose a random number and then pull the corresponding quote.
 
 function getRandomQuote() {
-	const randNumber = Math.floor(Math.random() * quotes.length);
-	return quotes[randNumber]
+	let randNumber = Math.floor(Math.random() * quotes.length);
+	return quotes[randNumber];
 }
 //checking random quote function
-console.log(getRandomQuote() );
+// console.log(getRandomQuote() );
 
 
 /***
@@ -63,17 +63,17 @@ console.log(getRandomQuote() );
 
 function printQuote() {
 	
-	const nQuote = getRandomQuote();
+	let nQuote = getRandomQuote();
 	
-	let htmlString = '<p class="quote">${nQuote.quote}</p><p class="source">${nQuote.source}</p>';
+	let htmlString = `<p class="quote">${nQuote.quote}</p><p class="source">${nQuote.source} `;
 		
-	/**	if  (randQuote.citation) {
-			htmlString += '<span class="citation">${randQuote.citation}</span>';
+		if  (nQuote.citation) {
+			htmlString += `<span class="citation">${nQuote.citation}</span>`;
 	}
-		if (randQuote.year) {
-			htmlString += '<span class="year">${randQuote.year}</span></p>';
+		if (nQuote.year) {
+			htmlString += `<span class="year">${nQuote.year}</span></p>`;
 		}
-	**/
+	
 document.getElementById('quote-box').innerHTML = htmlString;
 }
 console.log(printQuote);
