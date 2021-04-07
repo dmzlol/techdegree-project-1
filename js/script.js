@@ -62,14 +62,21 @@ console.log(getRandomQuote() );
 // function that uses the random object and prints to html.
 
 function printQuote() {
-	const randQuote = getRandomQuote();
-
 	
-	const source;
-	if (randQuote.source exists)
-
+	const nQuote = getRandomQuote();
+	
+	let htmlString = '<p class="quote">${nQuote.quote}</p><p class="source">${nQuote.source}</p>';
+		
+	/**	if  (randQuote.citation) {
+			htmlString += '<span class="citation">${randQuote.citation}</span>';
+	}
+		if (randQuote.year) {
+			htmlString += '<span class="year">${randQuote.year}</span></p>';
+		}
+	**/
+document.getElementById('quote-box').innerHTML = htmlString;
 }
-
+console.log(printQuote);
 
 /***
  * click event listener for the print quote button
