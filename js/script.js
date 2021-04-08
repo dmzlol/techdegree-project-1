@@ -77,7 +77,7 @@ function printQuote() {
 	
 document.getElementById('quote-box').innerHTML = htmlFinal;
 }
-console.log(printQuote);
+// console.log(printQuote);
 
 /***
  * click event listener for the print quote button
