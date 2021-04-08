@@ -14,7 +14,7 @@ project 1 - A Random Quote Generator
 
 const quotes = [
 {	
-	quote: "I didn't know how many of them it was going to take to whip my ass, but i knew how many they were going to use. Thats a handy piece of information to have, right there.",
+	quote: "I didn't know how many of them it was going to take to whip my ass, but I knew how many they were going to use. Thats a handy piece of information to have, right there.",
 	source: "Ron White",
 	citation: "Blue Collar Comedy Tour",
 	year: '2003'
@@ -71,10 +71,11 @@ function printQuote() {
 			htmlString += `<span class="citation">${nQuote.citation}</span>`;
 	}
 		if (nQuote.year) {
-			htmlString += `<span class="year">${nQuote.year}</span></p>`;
+			htmlString += `<span class="year">${nQuote.year}</span>`;
 		}
+	let htmlFinal = htmlString + `</p>`;
 	
-document.getElementById('quote-box').innerHTML = htmlString;
+document.getElementById('quote-box').innerHTML = htmlFinal;
 }
 console.log(printQuote);
 
